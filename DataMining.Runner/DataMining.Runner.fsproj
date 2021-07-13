@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework> 
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile> 
+
+    <AssemblyName>DataMining.esapi</AssemblyName> 
+
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Script.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VMS.TPS.Common.Model.API">
+      <HintPath>..\..\VMS Libraries\VMS.TPS.Common.Model.API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

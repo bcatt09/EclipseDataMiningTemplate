@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AssemblyName>DataMining</AssemblyName> 
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="FodyWeavers.xml" />
+    <None Include="SQL Queries\GetRecentPatientsFromHospital.sql" />
+    <None Include="SQL Queries\GetRecentPatientsFromAllHospitals.sql" />
+    <Compile Include="SqlQueries.fs" />
+    <Compile Include="ConsoleCommands.fs" />
+    <Compile Include="UserInputFunctions.fs" />
+    <Compile Include="START_HERE_DataStructures.fs" />
+    <Compile Include="EclipseModule.fs" />
+    <Compile Include="CsvOutput.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Costura.Fody" Version="5.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FSharp.Data" Version="4.1.1" />
+    <PackageReference Include="FSharp.Data.SqlClient" Version="2.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VMS.TPS.Common.Model.API">
+      <HintPath>..\..\VMS Libraries\VMS.TPS.Common.Model.API.dll</HintPath>
+    </Reference>
+    <Reference Include="VMS.TPS.Common.Model.Types">
+      <HintPath>..\..\VMS Libraries\VMS.TPS.Common.Model.Types.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

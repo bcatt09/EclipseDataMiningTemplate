@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DataMining", "DataMining\DataMining.fsproj", "{74BC570A-121C-4C71-AF05-CC451399CA71}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DataMining.Runner", "DataMining.Runner\DataMining.Runner.fsproj", "{35FD7EED-5232-48B5-8BC9-17C936135191}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74BC570A-121C-4C71-AF05-CC451399CA71}.Debug|x64.ActiveCfg = Debug|x64
+		{74BC570A-121C-4C71-AF05-CC451399CA71}.Debug|x64.Build.0 = Debug|x64
+		{74BC570A-121C-4C71-AF05-CC451399CA71}.Release|x64.ActiveCfg = Release|x64
+		{74BC570A-121C-4C71-AF05-CC451399CA71}.Release|x64.Build.0 = Release|x64
+		{35FD7EED-5232-48B5-8BC9-17C936135191}.Debug|x64.ActiveCfg = Debug|x64
+		{35FD7EED-5232-48B5-8BC9-17C936135191}.Debug|x64.Build.0 = Debug|x64
+		{35FD7EED-5232-48B5-8BC9-17C936135191}.Release|x64.ActiveCfg = Release|x64
+		{35FD7EED-5232-48B5-8BC9-17C936135191}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53F1B2D0-C43A-4FD8-82FD-74DF2666EAF4}
+	EndGlobalSection
+EndGlobal
