@@ -76,9 +76,9 @@ let writeProgressBarWithText percent (text: string) =
     Console.Write('\r')
     Console.ResetColor()
     Console.Write "["
-    let numBlocks = int (percent * 100.0 / 10.0) + 1
+    let numBlocks = int (percent * 100.0 / 10.0)
     progressBarWrite ProgressBarColor (String.replicate numBlocks block + String.replicate (10 - numBlocks) " ")
-    Console.Write $"] %0.1f{percent * 100.0}%%"
+    Console.Write $"] {int (percent * 100.0)}%%"
     if text <> ""
     then Console.Write($" - %-75s{text}")
     

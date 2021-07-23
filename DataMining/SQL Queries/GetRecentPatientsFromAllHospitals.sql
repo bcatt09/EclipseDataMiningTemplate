@@ -13,6 +13,6 @@ FROM ScheduledActivity as sa
     INNER JOIN  Hospital as hosp on hosp.HospitalSer = dep.HospitalSer
 WHERE (actCat.ActivityCategoryCode = 'Treatment')
     AND (sa.ObjectStatus <> 'Deleted')
-    AND (sa.ScheduledStartTime BETWEEN DATEADD(day, - 1, GETDATE()) AND DATEADD(DAY, @daysToSearch, GETDATE()))
+    AND (sa.ScheduledStartTime BETWEEN DATEADD(DAY, -@daysToSearch, GETDATE()) AND DATEADD(day, + 1, GETDATE()))
 GROUP BY pt.PatientId, hosp.HospitalName
 ORDER BY hosp.HospitalName
